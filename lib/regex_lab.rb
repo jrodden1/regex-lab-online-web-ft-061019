@@ -12,7 +12,7 @@ def words_starting_with_un_and_ending_with_ing(text)
   binding.pry
   output_array = []
   text_array.each do |word|
-    if word.include?(/^un/) != nil && word.include?(/ing$/) != nil
+    if word.match(/^un/) != nil && word.match(/ing$/) != nil
       output_array << word
     end
   end
