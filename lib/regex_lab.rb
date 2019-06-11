@@ -33,6 +33,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  binding.pry
+  sanitized_phone = phone.scan(/\d/)
 
+  sanitized_phone.length == 10 ? true : false
 end
