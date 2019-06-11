@@ -9,8 +9,14 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   text_array = text.split(" ")
-  binding.pry 
-  text_array.scan(/^un/ && /$ing/)
+  binding.pry
+  output_array = []
+  text_array.each do |word|
+    if word.include?(/^un/) != nil && word.include?(/ing$/) != nil
+      output_array << word
+    end
+  end
+  output_array
 end
 
 def words_five_letters_long(text)
