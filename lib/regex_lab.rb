@@ -23,6 +23,7 @@ def words_five_letters_long(text)
   text_array.select do |word|
     word.length == 5
   end
+  binding.pry 
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
