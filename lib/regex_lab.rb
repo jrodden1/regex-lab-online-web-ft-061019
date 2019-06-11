@@ -28,11 +28,11 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   matched = !!text.scan(/\A[A-Z].*[\.\?\!]\z/)
-
+  binding.pry
   matched == [] ? matched = false : matched = true
 end
 
 def valid_phone_number?(phone)
-  binding.pry
+  #binding.pry
 
 end
